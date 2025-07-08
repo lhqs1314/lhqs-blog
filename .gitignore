@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+coverage/
+*.log
+*.lock
+*.swp
+*.swo
+*.out
+*.pid
+*.cache
+*.DS_Store
+*.min.js
+*.min.css
+*.min.map
+*.minified.js
