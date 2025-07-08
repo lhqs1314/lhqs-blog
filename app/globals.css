@@ -275,3 +275,22 @@ article {
     filter: blur(0);
   }
 }
+
+/* 二级目录滚动条弱化样式，容器类名如有不同请自行调整 */
+.secondary-navigation {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.08) transparent;
+}
+.secondary-navigation::-webkit-scrollbar {
+  width: 2px;
+  background: transparent;
+}
+.secondary-navigation::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.08);
+  border-radius: 2px;
+  transition: background 0.3s;
+}
+.secondary-navigation::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.15);
+}

@@ -21,6 +21,8 @@ function SecondaryItem(props: React.ComponentProps<typeof Link> & { active?: boo
       <Link {...rest} className='inline-block w-full' draggable={false} />
     </li>
   )
+
+  
 }
 
 export default function SecondaryNavigation() {
@@ -76,9 +78,9 @@ export default function SecondaryNavigation() {
   }
   
   return (
-    <nav>
+    <nav className="pl-6 border-l border-zinc-200 inline-block w-fit ">
       {sectionTitle && <h2 className="text-rurikon-500 font-medium mb-4">{sectionTitle}</h2>}
-      <ul className="text-sm">
+      <ul className="text-sm ">
         {items.map((item) => {
           // 对于文章页面，检查当前路径是否匹配文章slug
           const isActive = pathname.startsWith('/thoughts/') 
@@ -91,10 +93,12 @@ export default function SecondaryNavigation() {
               href={item.slug.startsWith('#') ? item.slug : `/thoughts/${item.slug}`}
               active={isActive}
             >
-              {item.title}
-              {item.date && (
-                <span className="text-xs text-rurikon-200 ml-2">{item.date}</span>
-              )}
+              <div className="flex justify-between items-center w-full">
+                <span>{item.title}</span>
+                {item.date && (
+                  <span className="text-xs text-rurikon-200 ml-2 whitespace-nowrap">{item.date}</span>
+                )}
+              </div>
             </SecondaryItem>
           );
         })}

@@ -47,9 +47,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+
   return (
     <html lang='en' className='overflow-x-hidden touch-manipulation'>
       <body
+        suppressHydrationWarning
         className={cn(
           sans.variable,
           serif.variable,
@@ -66,8 +68,8 @@ export default function RootLayout({
           <Navbar />
           
           {/* 第二列：二级目录 */}
-          <div className='mobile:w-48 lg:w-64 mobile:mr-6 sm:mr-10 md:mr-14 mobile:border-r border-rurikon-border'>
-            <div className='mobile:sticky top-6 sm:top-10 md:top-14 mobile:h-[calc(100vh-2rem)] overflow-y-auto pr-4'>
+          <div className='mobile:w-48 lg:w-80 mobile:mr-0 sm:mr-10 md:pl-6 md:mr-0 hidden md:block'>
+            <div className='mobile:sticky top-6 sm:top-10 md:top-14 mobile:h-[calc(100vh-4rem)] overflow-y-auto pr-4 secondary-navigation'>
               {/* 这里将根据当前路径动态渲染二级目录 */}
               <SecondaryNavigation />
             </div>

@@ -1,5 +1,5 @@
 {
-  "name": "shud.in",
+  "name": "lhqs.blog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,8 +20,8 @@
     "katex": "^0.16.11",
     "next": "15.3.0-canary.19",
     "next-mdx-remote": "^4.4.1",
-    "react": "0.0.0-experimental-e1e74071-20250321",
-    "react-dom": "0.0.0-experimental-e1e74071-20250321",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "react-katex": "^3.0.1",
     "remark-gfm": "^4.0.0",
     "sharp": "^0.33.4",
@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "postcss": "^8.4.47",
     "tailwindcss": "4.0.0-beta.8",
     "typescript": "^5"

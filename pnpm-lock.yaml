@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@heroicons/react':
         specifier: ^2.1.5
-        version: 2.1.5(react@0.0.0-experimental-e1e74071-20250321)
+        version: 2.1.5(react@19.1.0)
       '@mdx-js/loader':
         specifier: ^3.0.1
         version: 3.0.1(webpack@5.91.0)
       '@mdx-js/react':
         specifier: ^3.0.1
-        version: 3.0.1(@types/react@18.3.3)(react@0.0.0-experimental-e1e74071-20250321)
+        version: 3.0.1(@types/react@19.1.8)(react@19.1.0)
       '@next/mdx':
         specifier: ^14.1.4
-        version: 14.2.3(@mdx-js/loader@3.0.1(webpack@5.91.0))(@mdx-js/react@3.0.1(@types/react@18.3.3)(react@0.0.0-experimental-e1e74071-20250321))
+        version: 14.2.3(@mdx-js/loader@3.0.1(webpack@5.91.0))(@mdx-js/react@3.0.1(@types/react@19.1.8)(react@19.1.0))
       '@shikijs/rehype':
         specifier: ^3.2.1
         version: 3.2.1
@@ -37,19 +37,19 @@ importers:
         version: 0.16.11
       next:
         specifier: 15.3.0-canary.19
-        version: 15.3.0-canary.19(react-dom@0.0.0-experimental-e1e74071-20250321(react@0.0.0-experimental-e1e74071-20250321))(react@0.0.0-experimental-e1e74071-20250321)
+        version: 15.3.0-canary.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       next-mdx-remote:
         specifier: ^4.4.1
-        version: 4.4.1(react-dom@0.0.0-experimental-e1e74071-20250321(react@0.0.0-experimental-e1e74071-20250321))(react@0.0.0-experimental-e1e74071-20250321)
+        version: 4.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
-        specifier: 0.0.0-experimental-e1e74071-20250321
-        version: 0.0.0-experimental-e1e74071-20250321
+        specifier: ^19.1.0
+        version: 19.1.0
       react-dom:
-        specifier: 0.0.0-experimental-e1e74071-20250321
-        version: 0.0.0-experimental-e1e74071-20250321(react@0.0.0-experimental-e1e74071-20250321)
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
       react-katex:
         specifier: ^3.0.1
-        version: 3.0.1(prop-types@15.8.1)(react@0.0.0-experimental-e1e74071-20250321)
+        version: 3.0.1(prop-types@15.8.1)(react@19.1.0)
       remark-gfm:
         specifier: ^4.0.0
         version: 4.0.0
@@ -64,11 +64,11 @@ importers:
         specifier: ^20
         version: 20.14.2
       '@types/react':
-        specifier: ^18
-        version: 18.3.3
+        specifier: ^19
+        version: 19.1.8
       '@types/react-dom':
-        specifier: ^18
-        version: 18.3.0
+        specifier: ^19
+        version: 19.1.6(@types/react@19.1.8)
       postcss:
         specifier: ^8.4.47
         version: 8.4.47
@@ -567,14 +567,13 @@ packages:
   '@types/node@20.14.2':
     resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
 
-  '@types/prop-types@15.7.12':
-    resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
+  '@types/react-dom@19.1.6':
+    resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
+    peerDependencies:
+      '@types/react': ^19.0.0
 
-  '@types/react-dom@18.3.0':
-    resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
-
-  '@types/react@18.3.3':
-    resolution: {integrity: sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==}
+  '@types/react@19.1.8':
+    resolution: {integrity: sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==}
 
   '@types/unist@2.0.10':
     resolution: {integrity: sha512-IfYcSBWE3hLpBg8+X2SEa8LVkJdJEkT2Ese2aaLs3ptGdVtABxndrMaxuFlQ1qdFf9Q5rDvDpxI3WwgvKFAsQA==}
@@ -1399,10 +1398,10 @@ packages:
   randombytes@2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
 
-  react-dom@0.0.0-experimental-e1e74071-20250321:
-    resolution: {integrity: sha512-yObdWERAUpkMXl5UV/t9JkPOIMf52rYIENXLFRd9PdQwb9ATKnFCNcwG4ks7gmRFXTgt9+AWGsH3N2y5KLYpTw==}
+  react-dom@19.1.0:
+    resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
     peerDependencies:
-      react: 0.0.0-experimental-e1e74071-20250321
+      react: ^19.1.0
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -1413,8 +1412,8 @@ packages:
       prop-types: ^15.8.1
       react: '>=15.3.2 <=18'
 
-  react@0.0.0-experimental-e1e74071-20250321:
-    resolution: {integrity: sha512-RDWS6HhPpa1QwSBqGHMmFQ5BRfYaD9juYzitHzIscG6AKVUCCcNRD801ujqx8DiHJ7T0b7fIflu4Sig5F7Rh8w==}
+  react@19.1.0:
+    resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
     engines: {node: '>=0.10.0'}
 
   regex-recursion@6.0.2:
@@ -1457,8 +1456,8 @@ packages:
   safe-buffer@5.2.1:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
 
-  scheduler@0.0.0-experimental-e1e74071-20250321:
-    resolution: {integrity: sha512-HutPlGVV2hSDAb6CycrFRXdUGmPnXUvYvHPrjihMTXS76flkd7lCWlqcU6iqXYZTKMigwwxlKUrW+MWtJxX3Ow==}
+  scheduler@0.26.0:
+    resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}
 
   schema-utils@3.3.0:
     resolution: {integrity: sha512-pN/yOAvcC+5rQ5nERGuwrjLlYvLTbCibnZ1I7B1LaiAz9BRBlE9GMgE/eqV30P7aJQUf7Ddimy/RsbYO/GrVGg==}
@@ -1700,9 +1699,9 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@heroicons/react@2.1.5(react@0.0.0-experimental-e1e74071-20250321)':
+  '@heroicons/react@2.1.5(react@19.1.0)':
     dependencies:
-      react: 0.0.0-experimental-e1e74071-20250321
+      react: 19.1.0
 
   '@img/sharp-darwin-arm64@0.33.4':
     optionalDependencies:
@@ -1934,26 +1933,26 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@mdx-js/react@2.3.0(react@0.0.0-experimental-e1e74071-20250321)':
+  '@mdx-js/react@2.3.0(react@19.1.0)':
     dependencies:
       '@types/mdx': 2.0.13
-      '@types/react': 18.3.3
-      react: 0.0.0-experimental-e1e74071-20250321
+      '@types/react': 19.1.8
+      react: 19.1.0
 
-  '@mdx-js/react@3.0.1(@types/react@18.3.3)(react@0.0.0-experimental-e1e74071-20250321)':
+  '@mdx-js/react@3.0.1(@types/react@19.1.8)(react@19.1.0)':
     dependencies:
       '@types/mdx': 2.0.13
-      '@types/react': 18.3.3
-      react: 0.0.0-experimental-e1e74071-20250321
+      '@types/react': 19.1.8
+      react: 19.1.0
 
   '@next/env@15.3.0-canary.19': {}
 
-  '@next/mdx@14.2.3(@mdx-js/loader@3.0.1(webpack@5.91.0))(@mdx-js/react@3.0.1(@types/react@18.3.3)(react@0.0.0-experimental-e1e74071-20250321))':
+  '@next/mdx@14.2.3(@mdx-js/loader@3.0.1(webpack@5.91.0))(@mdx-js/react@3.0.1(@types/react@19.1.8)(react@19.1.0))':
     dependencies:
       source-map: 0.7.4
     optionalDependencies:
       '@mdx-js/loader': 3.0.1(webpack@5.91.0)
-      '@mdx-js/react': 3.0.1(@types/react@18.3.3)(react@0.0.0-experimental-e1e74071-20250321)
+      '@mdx-js/react': 3.0.1(@types/react@19.1.8)(react@19.1.0)
 
   '@next/swc-darwin-arm64@15.3.0-canary.19':
     optional: true
@@ -2141,15 +2140,12 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
-  '@types/prop-types@15.7.12': {}
-
-  '@types/react-dom@18.3.0':
+  '@types/react-dom@19.1.6(@types/react@19.1.8)':
     dependencies:
-      '@types/react': 18.3.3
+      '@types/react': 19.1.8
 
-  '@types/react@18.3.3':
+  '@types/react@19.1.8':
     dependencies:
-      '@types/prop-types': 15.7.12
       csstype: 3.1.3
 
   '@types/unist@2.0.10': {}
@@ -3378,18 +3374,18 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-mdx-remote@4.4.1(react-dom@0.0.0-experimental-e1e74071-20250321(react@0.0.0-experimental-e1e74071-20250321))(react@0.0.0-experimental-e1e74071-20250321):
+  next-mdx-remote@4.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       '@mdx-js/mdx': 2.3.0
-      '@mdx-js/react': 2.3.0(react@0.0.0-experimental-e1e74071-20250321)
-      react: 0.0.0-experimental-e1e74071-20250321
-      react-dom: 0.0.0-experimental-e1e74071-20250321(react@0.0.0-experimental-e1e74071-20250321)
+      '@mdx-js/react': 2.3.0(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
       vfile: 5.3.7
       vfile-matter: 3.0.1
     transitivePeerDependencies:
       - supports-color
 
-  next@15.3.0-canary.19(react-dom@0.0.0-experimental-e1e74071-20250321(react@0.0.0-experimental-e1e74071-20250321))(react@0.0.0-experimental-e1e74071-20250321):
+  next@15.3.0-canary.19(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       '@next/env': 15.3.0-canary.19
       '@swc/counter': 0.1.3
@@ -3397,9 +3393,9 @@ snapshots:
       busboy: 1.6.0
       caniuse-lite: 1.0.30001629
       postcss: 8.4.31
-      react: 0.0.0-experimental-e1e74071-20250321
-      react-dom: 0.0.0-experimental-e1e74071-20250321(react@0.0.0-experimental-e1e74071-20250321)
-      styled-jsx: 5.1.6(react@0.0.0-experimental-e1e74071-20250321)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      styled-jsx: 5.1.6(react@19.1.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 15.3.0-canary.19
       '@next/swc-darwin-x64': 15.3.0-canary.19
@@ -3474,20 +3470,20 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  react-dom@0.0.0-experimental-e1e74071-20250321(react@0.0.0-experimental-e1e74071-20250321):
+  react-dom@19.1.0(react@19.1.0):
     dependencies:
-      react: 0.0.0-experimental-e1e74071-20250321
-      scheduler: 0.0.0-experimental-e1e74071-20250321
+      react: 19.1.0
+      scheduler: 0.26.0
 
   react-is@16.13.1: {}
 
-  react-katex@3.0.1(prop-types@15.8.1)(react@0.0.0-experimental-e1e74071-20250321):
+  react-katex@3.0.1(prop-types@15.8.1)(react@19.1.0):
     dependencies:
       katex: 0.16.11
       prop-types: 15.8.1
-      react: 0.0.0-experimental-e1e74071-20250321
+      react: 19.1.0
 
-  react@0.0.0-experimental-e1e74071-20250321: {}
+  react@19.1.0: {}
 
   regex-recursion@6.0.2:
     dependencies:
@@ -3568,7 +3564,7 @@ snapshots:
 
   safe-buffer@5.2.1: {}
 
-  scheduler@0.0.0-experimental-e1e74071-20250321: {}
+  scheduler@0.26.0: {}
 
   schema-utils@3.3.0:
     dependencies:
@@ -3681,10 +3677,10 @@ snapshots:
     dependencies:
       inline-style-parser: 0.2.3
 
-  styled-jsx@5.1.6(react@0.0.0-experimental-e1e74071-20250321):
+  styled-jsx@5.1.6(react@19.1.0):
     dependencies:
       client-only: 0.0.1
-      react: 0.0.0-experimental-e1e74071-20250321
+      react: 19.1.0
 
   supports-color@8.1.1:
     dependencies:

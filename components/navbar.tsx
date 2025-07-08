@@ -31,13 +31,13 @@ function Item(props: React.ComponentProps<typeof Link>) {
 
 export default function Navbar() {
   return (
-    <nav className='mobile:mr-6 sm:mr-10 md:mr-14 w-full mobile:w-16'>
+    <nav className='mobile:mr-4 sm:mr-8 md:mr-12 w-full mobile:w-12'>
       <ul className='lowercase text-right mobile:sticky top-6 sm:top-10 md:top-14 mb-6 mobile:mb-0 flex gap-2 justify-end mobile:block'>
         <Item href='/'>About</Item>
         <Item href='/thoughts'>Thoughts</Item>
-        {/* <Item href='/visuals'>Visuals</Item> */}
+        <Item href='/visuals'>Visuals</Item>
         <Item href='/projects'>Projects</Item>
-        {/* <Item href='/guestbook'>Guestbook</Item> */}
+        <Item href='/guestbook'>Guestbook</Item>
       </ul>
     </nav>
   )
