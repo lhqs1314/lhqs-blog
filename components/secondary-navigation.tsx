@@ -71,7 +71,7 @@ export default function SecondaryNavigation() {
   if (pathname === '/') {
     sectionTitle = '关于';
   } else if (pathname.startsWith('/thoughts')) {
-    sectionTitle = '文章';
+    sectionTitle = '碎碎念';
   } else if (pathname.startsWith('/projects')) {
     sectionTitle = '项目';
   } else if (pathname.startsWith('/guestbook')) {
