@@ -26,8 +26,10 @@ function SecondaryItem(props: React.ComponentProps<typeof Link> & { active?: boo
 }
 
 export default function SecondaryNavigation() {
-  const pathname = usePathname()
+  const pathname = usePathname();
+  console.log("pathname =>", pathname);
   const [items, setItems] = useState<Array<{ title: string; slug: string; date?: string }>>([]);
+  
   
   useEffect(() => {
     // 只在客户端加载数据
@@ -64,22 +66,34 @@ export default function SecondaryNavigation() {
     fetchData();
   }, [pathname]);
   
-  // 如果没有二级导航项，则不显示
-  if (items.length === 0) {
-    return null;
-  }
-  
   // 根据当前路径显示不同的标题
   let sectionTitle = '';
-  if (pathname.startsWith('/thoughts')) {
+  if (pathname === '/') {
+    sectionTitle = '关于';
+  } else if (pathname.startsWith('/thoughts')) {
     sectionTitle = '文章';
   } else if (pathname.startsWith('/projects')) {
     sectionTitle = '项目';
+  } else if (pathname.startsWith('/guestbook')) {
+    sectionTitle = '留言板';
+  } else if (pathname.startsWith('/quotes')) {
+    sectionTitle = '摘抄';
+  } else if (pathname.startsWith('/visuals')) {
+    sectionTitle = '作品集';
+  } else {
+    sectionTitle = '其他';
   }
+
+  // if (items.length === 0) {
+  //   return null;
+  // }
+
+  // 仅在 items 存在时输出日志，避免无意义输出
+  // console.log("sectionTitle =>", sectionTitle);
   
   return (
     <nav className="pl-6 border-l border-zinc-200 inline-block w-fit ">
-      {sectionTitle && <h2 className="text-rurikon-500 font-medium mb-4">{sectionTitle}</h2>}
+      {sectionTitle && <h2 className="text-rurikon-500 font-medium mb-1">{sectionTitle}</h2>}
       <ul className="text-sm ">
         {items.map((item) => {
           // 对于文章页面，检查当前路径是否匹配文章slug

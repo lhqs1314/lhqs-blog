@@ -33,11 +33,12 @@ export default function Navbar() {
   return (
     <nav className='mobile:mr-4 sm:mr-8 md:mr-12 w-full mobile:w-12'>
       <ul className='lowercase text-right mobile:sticky top-6 sm:top-10 md:top-14 mb-6 mobile:mb-0 flex gap-2 justify-end mobile:block'>
-        <Item href='/'>About</Item>
-        <Item href='/thoughts'>Thoughts</Item>
-        <Item href='/visuals'>Visuals</Item>
-        <Item href='/projects'>Projects</Item>
-        <Item href='/guestbook'>Guestbook</Item>
+        <Item href='/'>关于我</Item>
+        <Item href='/thoughts'>碎碎念</Item>
+        <Item href='/visuals'>作品集</Item>
+        <Item href='/projects'>项目</Item>
+        <Item href='/quotes'>摘抄</Item>
+        <Item href='/guestbook'>留言板</Item>
       </ul>
     </nav>
   )
