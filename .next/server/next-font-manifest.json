@@ -24,6 +24,11 @@
       "static/media/IosevkaFixedCurly_ExtendedMedium-s.p.87a853df.woff2",
       "static/media/InterVariable-s.p.a9841397.woff2",
       "static/media/LoraItalicVariable-s.p.4ec1bf1d.woff2"
+    ],
+    "[project]/app/visuals/page": [
+      "static/media/IosevkaFixedCurly_ExtendedMedium-s.p.87a853df.woff2",
+      "static/media/InterVariable-s.p.a9841397.woff2",
+      "static/media/LoraItalicVariable-s.p.4ec1bf1d.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

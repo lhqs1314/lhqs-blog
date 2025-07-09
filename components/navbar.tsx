@@ -34,7 +34,7 @@ export default function Navbar() {
     <nav className='mobile:mr-4 sm:mr-8 md:mr-12 w-full mobile:w-12'>
       <ul className='lowercase text-right mobile:sticky top-6 sm:top-8 md:top-10 mb-6 mobile:mb-0 flex gap-2 justify-end mobile:block'>
         <Item href='/'>关于</Item>
-        <Item href='/thoughts'>碎碎念</Item>
+        <Item href='/thoughts'>碎碎记</Item>
         <Item href='/visuals'>作品集</Item>
         <Item href='/projects'>项目</Item>
         {/* <Item href='/quotes'>摘抄</Item> */}
