@@ -31,8 +31,8 @@ const mono = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - lhqs',
-    default: 'lhqs',
+    template: '%s - Shu Ding',
+    default: 'Shu Ding',
   },
 }
 
@@ -56,7 +56,7 @@ export default function RootLayout({
           sans.variable,
           serif.variable,
           mono.variable,
-          'w-full p-6 sm:p-10 md:p-14',
+          'w-full p-6 sm:p-8 md:p-10',
           'text-sm leading-6 sm:text-[15px] sm:leading-7 md:text-base md:leading-7',
           'text-rurikon-500',
           'antialiased'
@@ -69,7 +69,7 @@ export default function RootLayout({
           
           {/* 第二列：二级目录 */}
           <div className='mobile:w-48 lg:w-80 mobile:mr-0 sm:mr-10 md:pl-6 md:mr-0 hidden md:block'>
-            <div className='mobile:sticky top-6 sm:top-10 md:top-14 mobile:h-[calc(100vh-4rem)] overflow-y-auto pr-4 secondary-navigation'>
+            <div className='mobile:sticky top-6 sm:top-8 md:top-10 mobile:h-[calc(100vh-4rem)] overflow-y-auto pr-4 secondary-navigation'>
               {/* 这里将根据当前路径动态渲染二级目录 */}
               <SecondaryNavigation />
             </div>
