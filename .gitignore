@@ -1,17 +1,45 @@
-node_modules/
+# 构建输出
 .next/
 dist/
-build/
-coverage/
+out/
+*.tsbuildinfo
+.turbo/
+.swc/
+
+# 依赖项
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.pnpm-store/
+
+# 环境变量与敏感文件
+.env*
+!.env.example  # 保留示例文件
+
+# 日志与调试文件
 *.log
-*.lock
+*.cpuprofile
+*.heapsnapshot
+pids/
+
+# 测试相关
+coverage/
+.nyc_output/
+test/**/out*
+test/**/.trace
+test/tmp/**
+
+# IDE 和编辑器配置
+.idea/
+.vscode/
 *.swp
-*.swo
-*.out
-*.pid
-*.cache
-*.DS_Store
-*.min.js
-*.min.css
-*.min.map
-*.minified.js
+.DS_Store
+
+# Vercel 部署相关
+.vercel/
+.now/
+
+# 其他临时文件
+**/*.tmp
+**/*.bak

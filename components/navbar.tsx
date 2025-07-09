@@ -37,7 +37,7 @@ export default function Navbar() {
         <Item href='/thoughts'>碎碎念</Item>
         <Item href='/visuals'>作品集</Item>
         <Item href='/projects'>项目</Item>
-        <Item href='/quotes'>摘抄</Item>
+        {/* <Item href='/quotes'>摘抄</Item> */}
         {/* <Item href='/guestbook'>留言板</Item> */}
       </ul>
     </nav>
