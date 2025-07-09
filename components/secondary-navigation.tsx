@@ -50,7 +50,7 @@ export default function SecondaryNavigation() {
           { title: '网址导航', slug: '#网址导航' },
           { title: '四海创作系统', slug: '#四海创作系统' },
           { title: '极简博客', slug: '#极简博客' },
-          { title: 'PDF注释工具', slug: '#pdf注释工具' }
+          { title: 'PDF注释工具', slug: '#PDF注释工具' }
         ]);
       } else {
         // 其他页面暂无二级导航
