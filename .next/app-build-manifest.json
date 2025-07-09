@@ -1,5 +1,43 @@
 {
   "pages": {
+    "/_not-found/page": [
+      "static/chunks/51ccd_next_dist_118755b4._.js",
+      "static/chunks/app_favicon_ico_mjs_dca8f275._.js",
+      "static/chunks/_a507fdf0._.css",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_f629fa13._.js",
+      "static/chunks/_5855a700._.js",
+      "static/chunks/app_layout_tsx_af34fee3._.js",
+      "static/chunks/51ccd_next_dist_58dc079a._.js",
+      "static/chunks/components_tweet-card_tsx_b7690a13._.js",
+      "static/chunks/app_not-found_tsx_ec1c34b4._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_826d040c._.js",
+      "static/chunks/51ccd_next_dist_compiled_react-dom-experimental_1bfdafc8._.js",
+      "static/chunks/51ccd_next_dist_compiled_705bf48d._.js",
+      "static/chunks/51ccd_next_dist_client_81ea89ac._.js",
+      "static/chunks/51ccd_next_dist_3b342df9._.js",
+      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_dbb1a334._.js"
+    ],
+    "/page": [
+      "static/chunks/51ccd_next_dist_118755b4._.js",
+      "static/chunks/app_favicon_ico_mjs_dca8f275._.js",
+      "static/chunks/_a507fdf0._.css",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_f629fa13._.js",
+      "static/chunks/_5855a700._.js",
+      "static/chunks/app_layout_tsx_af34fee3._.js",
+      "static/chunks/51ccd_next_dist_58dc079a._.js",
+      "static/chunks/components_tweet-card_tsx_b7690a13._.js",
+      "static/chunks/app_not-found_tsx_ec1c34b4._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_826d040c._.js",
+      "static/chunks/51ccd_next_dist_compiled_react-dom-experimental_1bfdafc8._.js",
+      "static/chunks/51ccd_next_dist_compiled_705bf48d._.js",
+      "static/chunks/51ccd_next_dist_client_81ea89ac._.js",
+      "static/chunks/51ccd_next_dist_3b342df9._.js",
+      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_dbb1a334._.js"
+    ],
     "/projects/page": [
       "static/chunks/51ccd_next_dist_118755b4._.js",
       "static/chunks/app_favicon_ico_mjs_dca8f275._.js",

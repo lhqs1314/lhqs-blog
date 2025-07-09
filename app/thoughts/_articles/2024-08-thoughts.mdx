@@ -1,0 +1,87 @@
+export const metadata = {
+  title: '2024年8月碎碎记：工作流、RAG与本质问题',
+  date: '2024.08.31',
+  description: '八月复盘：聚焦AI工作流（Workflow）的编排与实现，深入探讨RAG技术的相关工具与系统构成，并回归到关于知识、商业和个人成长的本质问题。',
+  chinese: true,
+}
+
+# 2024年8月碎碎记：工作流、RAG与本质问题
+
+> 拖延来源于精确性的不足。  
+> 1、通过倒推和量化，消除结果和过程的模糊性；  
+> 2、找出关键步骤框架。  
+
+八月，我花了很多时间在探索和思考AI工作流的编排、RAG（检索增强生成）的应用，以及如何回归本质看问题。
+
+## 🌊 AI 工作流 (Workflow) 与 RAG
+
+Workflow 是当下AI应用开发的热点，涌现了大量优秀的产品和框架。
+
+### Workflow 编排工具
+- **商业与开源方案**: Dify, Coze, Langflow, FlowiseAI, Aigne, Ragflow, Vectorshift 等，各有千秋。
+- **核心原理**: 值得花时间搞清楚这些 Workflow 工具背后实现的共同原理。
+
+### RAG (Retrieval-Augmented Generation)
+RAG 应用的基础技术核心是：让大模型依靠现有的数据（PDF/WORD/Excel/HTML等）精准地回答用户的问题。
+
+- **RAG 系统构成**:
+  - **数据工程**: 知识库的构建，包括文件类型、格式、分割策略、知识类型、索引方式等。
+  - **检索生成**: 数据处理完成后，配合大模型进行检索生成，包括 Prompt 工程、算法策略、检索方式、中间件、大模型、查询处理等。
+  - **业务系统**: 商业行为衍生的上层应用，包括租户、计费、开放平台、洞察、运营等。
+- **相关工具与资源**:
+  - **多模态检索**: [Byaldi](https://x.com/shao__meng/status/1831848638412419213)
+  - **技术实现**: [Advanced Retrieval-Augmented Generation: From Theory to LlamaIndex Implementation](https://towardsdatascience.com/advanced-retrieval-augmented-generation-from-theory-to-llamaindex-implementation-4de1464a9930)
+  - **RAG 公司**: Devv.ai, RunLLM.com
+
+## 🛠️ AI 工具箱：从Prompt到代码生成
+
+这个月收集的工具和资源，覆盖了从提示词工程到具体应用的方方面面。
+
+### Prompt 工程资源
+- **Prompting Guide**: [中文版指南](https://www.promptingguide.ai/zh)
+- **新奇鼠**：[Prompt Engineering Guide](https://prompt-engineering.xiniushu.com/)
+- **SuperPrompt**: [GitHub - NeoVertex1/SuperPrompt](https://github.com/NeoVertex1/SuperPrompt)
+- **LangGPT**: [GitHub - langgptai/LangGPT](https://github.com/langgptai/LangGPT)
+
+### 代码生成与 Serverless
+- **Cursor**: 强大的AI代码编辑器。
+- **Val Town**: [Serverless 结合 AI 生成代码](https://www.val.town)，一个非常酷的探索。
+- **Claude Engineer**: [GitHub - Doriandarko/claude-engineer](https://github.com/Doriandarko/claude-engineer)
+
+### AI 网关与其他
+- **Kong Gateway - AI Proxy**: [AI 网关解决方案](https://docs.konghq.com/hub/)
+- **Semantic Router**: [GitHub - aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router)
+- **AI模型资源**: [Free AI API](https://www.freeaihunter.com/), [AI相关API白嫖和成本评估综合表](https://hfbc4zhv5y.larksuite.com/wiki/Khq2wZIBQi0Sw7kmDo5uqpD7sRp)
+
+## 🤔 回归本质：关于知识、商业与自我
+
+> 学会回归本质看问题。
+
+- **知识的本质**是理解自我和世界；
+- **技能的本质**是使用工具解决问题；
+- **产品的本质**是满足一群人的需求；
+- **商业的本质**是用产品买卖；
+- **网络的本质**是连接和流量变现；
+- **社群的本质**是创造人与人的信任和多重链接；
+- **媒体的本质**是传播信息；
+- **教育的本质**是改变认知和行为；
+- **咨询的本质**是提供个性化指导方案；
+- **品牌的本质**是用独特标签霸占用户心智。
+
+### 贝叶斯公式与个人成长
+贝叶斯公式：`P(信念|证据) = 似然比 * P(信念)`
+人与人因成长背景和教育差异，初始信念 `P(信念)` 不同。面对新证据，大家更新后的信念 `P(信念|证据)` 也会不同。这提醒我们，要不断接触新证据、新信息，持续更新自己的认知。
+
+### 两个世界的对话
+- **学院派流量玩法**: SEO, ASO, build in public, ARR, MRR，非常“光鲜靓丽”。
+- **草根流量玩法**: 有自热、无自热、红薯自热、截流、打粉、出粉、收粉、手工打粉、卡密、一转二转、有偿粉、无偿粉……
+
+这两个世界的话语体系完全不同，理解它们之间的差异，本身就是一种重要的认知。
+
+### 重要的心态
+- **最重要的心态**: Active (遇山开山, 不等不靠)
+- **最重要的技能**: Focus (全神贯注, 心无旁骛)
+
+---
+
+> “把你的内心想成一个充满了鱼的池塘，每条鱼都是一种情绪。试着成为那个池塘，而不是其中的一条鱼”。
