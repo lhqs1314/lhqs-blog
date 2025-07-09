@@ -1,6 +1,8 @@
 import { promises as fs } from 'fs'
 import path from 'path'
 import cn from 'clsx'
+import { notFound } from 'next/navigation';
+
 
 export default async function Page(props: {
   params: Promise<{
@@ -8,18 +10,21 @@ export default async function Page(props: {
   }>
 }) {
   const params = await props.params
-  const { default: MDXContent, metadata } = await import(
-    '../_articles/' + `${params.slug}.mdx`
-  )
-
-  return (
-    <div
-      className={cn(metadata.chinese && 'text-justify font-zh')}
-      lang={metadata.chinese ? 'zh-Hans' : 'en'}
-    >
-      <MDXContent />
-    </div>
-  )
+  try {
+    const { default: MDXContent, metadata } = await import(
+      '../_articles/' + `${params.slug}.mdx`
+    )
+    return (
+      <div
+        className={cn(metadata.chinese && 'text-justify font-zh')}
+        lang={metadata.chinese ? 'zh-Hans' : 'en'}
+      >
+        <MDXContent />
+      </div>
+    )
+  } catch (error) {
+    notFound()
+  }
 }
 
 export async function generateStaticParams() {
