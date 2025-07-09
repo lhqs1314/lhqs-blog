@@ -27,7 +27,7 @@ function SecondaryItem(props: React.ComponentProps<typeof Link> & { active?: boo
 
 export default function SecondaryNavigation() {
   const pathname = usePathname();
-  console.log("pathname =>", pathname);
+  // console.log("pathname =>", pathname);
   const [items, setItems] = useState<Array<{ title: string; slug: string; date?: string }>>([]);
   
   

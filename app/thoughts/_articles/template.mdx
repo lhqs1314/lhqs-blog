@@ -1,0 +1,68 @@
+export const metadata = {
+  title: '写作模板案例',
+  date: '2022.04.30',
+  description: 'Markdown模板， 覆盖核心的一些用法',
+}
+
+# 写作模板案例
+
+Markdown模板， 提供高级的一些用法。
+
+## 支持引用
+
+> 人们总是低估 AI 发展遵循的“火车效应”：
+> 一列远处开来的火车，你总觉得它很慢，直到它呼啸而过，人们才感受到速度，超过人类后，就再也看不见尾灯。
+
+
+## 支持代码高亮
+
+```jsx
+// page.jsx
+export default function Page () {
+  return <h1>
+    Hello, <User/>
+  </h1>
+}
+```
+
+## 支持tailwind语法
+<div className="text-red-500">
+通过“text-red-500”设置文本颜色为红色
+</div>
+
+
+## 支持图片 + 注释
+
+![Genecatgirlva](catgirl.jpg "猫耳少女")
+
+## 支持 HTML + CSS
+
+<div style={{display: 'flex'}}>
+![](catgirl.jpg)
+
+![](catgirl.jpg)
+</div>
+
+
+
+
+## 支持数学公式
+<BlockMath math="\operatorname{MSE} = \sum{\frac{(\operatorname{Value} - \operatorname{PredictedValue})^2}{\operatorname{DataCount}}}"/>
+----
+<InlineMath math="\operatorname{error}=max(\operatorname{MSE}(\operatorname{TrainingSet}), \operatorname{MSE}(\operatorname{TestSet}))"/>
+
+## 支持iframe
+
+<BlockSideTitle title={<>Example dataset: penguin’s bill length vs. depth. (<a href="https://allisonhorst.github.io/palmerpenguins">data source</a>)</>}>
+  <iframe src="https://observablehq.com/embed/@shu/plot-regression?cells=RegressionLinear" className="max-h-[440px] aspect-[5/4]"/>
+</BlockSideTitle>
+
+
+
+## 支持使用 global.css 样式
+<div className="framed [--frame-background:#6C5993]">![cover](cover.jpg)</div>
+
+
+## 支持自定义组件
+<Card title="COBE" desc="5kB WebGL globe lib." link="https://github.com/shuding/cobe" image="https://repository-images.githubusercontent.com/429536908/62a4e686-8613-4b45-b7bb-fa35b558ae8e"></Card>
+
