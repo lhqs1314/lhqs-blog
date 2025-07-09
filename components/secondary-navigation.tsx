@@ -47,15 +47,10 @@ export default function SecondaryNavigation() {
       } else if (pathname.startsWith('/projects')) {
         // 项目页面的二级导航
         setItems([
-          { title: 'Next.js', slug: '#nextjs' },
-          { title: 'V0', slug: '#v0' },
-          { title: 'SWR', slug: '#swr' },
-          { title: 'Nextra', slug: '#nextra' },
-          { title: 'AI SDK', slug: '#ai-sdk' },
-          { title: 'Satori', slug: '#satori' },
-          { title: 'COBE', slug: '#cobe' },
-          { title: 'React Wrap Balancer', slug: '#react-wrap-balancer' },
-          { title: 'Next View Transitions', slug: '#next-view-transitions' },
+          { title: '网址导航', slug: '#网址导航' },
+          { title: '四海创作系统', slug: '#四海创作系统' },
+          { title: '极简博客', slug: '#极简博客' },
+          { title: 'PDF注释工具', slug: '#pdf注释工具' }
         ]);
       } else {
         // 其他页面暂无二级导航
