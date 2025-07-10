@@ -3,7 +3,13 @@ import Link from 'next/link'
 import path from 'path'
 
 export const metadata = {
-  title: 'Thoughts',
+  title: '碎碎记',
+  description: '分享关于设计、开发、AI和效率工具的思考与经验',
+  keywords: ['博客', '文章', '技术分享', '设计', '开发', 'AI'],
+  openGraph: {
+    title: '碎碎记 - lhqs的博客文章',
+    description: '分享关于设计、开发、AI和效率工具的思考与经验',
+  }
 }
 
 // In the future we can have a pagination here e.g. /1/*.mdx

@@ -33,6 +33,24 @@ export const metadata: Metadata = {
     template: '%s - lhqs',
     default: 'lhqs',
   },
+  description: '一个极简、现代、内容驱动的个人博客，分享设计、开发和AI相关内容',
+  keywords: ['设计', '全栈开发', 'UX', 'AI', '自动化', '效率工具'],
+  authors: [{ name: 'lhqs' }],
+  creator: 'lhqs',
+  openGraph: {
+    type: 'website',
+    locale: 'zh_CN',
+    url: 'https://blog.lhqs.ink/',
+    siteName: 'blog.lhqs.ink',
+    title: 'lhqs - 设计师和全栈开发工程师',
+    description: '一个极简、现代、内容驱动的个人博客，分享设计、开发和AI相关内容',
+    images: ['/og-image.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    creator: '@lhqs_gu',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export const viewport: Viewport = {

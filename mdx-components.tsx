@@ -110,18 +110,23 @@ export const components: Record<string, FC<any>> = {
   },
   Card,
   Image,
-  img: async ({ src, alt, title }) => {
+  img: async ({ src, alt = '', title }) => {
     let img: React.ReactNode
-
+    
+    // 确保所有图片都有alt文本，提高SEO和可访问性
+    const imgAlt = alt || (title ? title : '图片')
+    
     if (src.startsWith('https://')) {
       img = (
         <Image
           className='mt-7'
           src={src}
-          alt={alt}
+          alt={imgAlt}
           quality={95}
           placeholder='blur'
           draggable={false}
+          loading="lazy"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       )
     } else {
@@ -130,10 +135,12 @@ export const components: Record<string, FC<any>> = {
         <Image
           className='mt-7'
           src={image.default}
-          alt={alt}
+          alt={imgAlt}
           quality={95}
           placeholder='blur'
           draggable={false}
+          loading="lazy"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       )
     }

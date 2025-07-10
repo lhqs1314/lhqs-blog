@@ -14,11 +14,49 @@ export default async function Page(props: {
     const { default: MDXContent, metadata } = await import(
       '../_articles/' + `${params.slug}.mdx`
     )
+    
+    // 构建结构化数据
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: metadata.title,
+      datePublished: metadata.date?.replace(/\./g, '-'),
+      dateModified: metadata.lastModified?.replace(/\./g, '-') || metadata.date?.replace(/\./g, '-'),
+      description: metadata.description,
+      author: {
+        '@type': 'Person',
+        name: 'lhqs',
+        url: 'https://blog.lhqs.ink',
+      },
+      keywords: metadata.keywords?.join(', '),
+      url: `https://blog.lhqs.ink/thoughts/${params.slug}`,
+      image: metadata.image || 'https://blog.lhqs.ink/og-image.jpg',
+      publisher: {
+        '@type': 'Person',
+        name: 'lhqs',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://blog.lhqs.ink/icon.png'
+        }
+      },
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': `https://blog.lhqs.ink/thoughts/${params.slug}`
+      }
+    }
+    
     return (
       <div
         className={cn(metadata.chinese && 'text-justify font-zh')}
         lang={metadata.chinese ? 'zh-Hans' : 'en'}
       >
+        {/* 添加结构化数据 */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd)
+          }}
+        />
         <MDXContent />
       </div>
     )
