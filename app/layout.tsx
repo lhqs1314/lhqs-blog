@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next'
 
-// @ts-expect-error types are not available yet?
 import { unstable_ViewTransition as ViewTransition } from 'react'
 
 import cn from 'clsx'
