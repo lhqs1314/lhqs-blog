@@ -48,9 +48,10 @@ export default function SecondaryNavigation() {
         // 项目页面的二级导航
         setItems([
           { title: '网址导航', slug: '#网址导航' },
+          { title: 'Finder文件浏览器', slug: '#Finder' },
           { title: '四海创作系统', slug: '#四海创作系统' },
           { title: '极简博客', slug: '#极简博客' },
-          { title: 'PDF注释工具', slug: '#PDF注释工具' }
+          { title: 'PDF注释工具', slug: '#PDF-annotation' }
         ]);
       } else {
         // 其他页面暂无二级导航
