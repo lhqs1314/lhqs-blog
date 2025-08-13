@@ -10,6 +10,8 @@ import Navbar from '@/components/navbar'
 import SecondaryNavigation from '@/components/secondary-navigation'
 import './globals.css'
 
+import { Analytics } from "@vercel/analytics/next"
+
 const sans = localFont({
   src: './_fonts/InterVariable.woff2',
   preload: true,
@@ -102,6 +104,7 @@ export default function RootLayout({
             </ViewTransition>
           </main>
         </div>
+        <Analytics />
       </body>
     </html>
   )
