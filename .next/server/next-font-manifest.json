@@ -15,6 +15,11 @@
       "static/media/LoraItalicVariable-s.p.4ec1bf1d.woff2",
       "static/media/InterVariable-s.p.a9841397.woff2"
     ],
+    "[project]/app/thoughts/[slug]/page": [
+      "static/media/IosevkaFixedCurly_ExtendedMedium-s.p.87a853df.woff2",
+      "static/media/LoraItalicVariable-s.p.4ec1bf1d.woff2",
+      "static/media/InterVariable-s.p.a9841397.woff2"
+    ],
     "[project]/app/thoughts/page": [
       "static/media/IosevkaFixedCurly_ExtendedMedium-s.p.87a853df.woff2",
       "static/media/LoraItalicVariable-s.p.4ec1bf1d.woff2",
